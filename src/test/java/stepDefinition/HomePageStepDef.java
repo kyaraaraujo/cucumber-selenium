@@ -42,9 +42,9 @@ public class HomePageStepDef {
         Assert.assertTrue(loginPage.isUsernameLabelTextVisible());
     }
 
-    @When("User insert credencials")
-    public void user_insert_credencials() {
-        loginPage.insertRightCredencials();
+    @When("User insert {} and {}")
+    public void user_insert_credentials(String username, String password) {
+        loginPage.insertRightCredentials(username, password);
     }
 
     @And("click on login")

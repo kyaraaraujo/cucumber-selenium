@@ -29,9 +29,9 @@ public class LoginPage extends BasePage {
         return usernameLabel.isDisplayed();
     }
 
-    public void insertRightCredencials(){
-        userField.sendKeys("abc");
-        passwordField.sendKeys("pwd");
+    public void insertRightCredentials(String username, String password){
+        userField.sendKeys(username);
+        passwordField.sendKeys(password);
     }
 
     public void submitLogin(){
